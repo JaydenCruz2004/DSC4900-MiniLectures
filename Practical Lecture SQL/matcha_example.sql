@@ -13,23 +13,26 @@
 -- 1) See the data (always start here)
 SELECT * FROM customers;
 
--- 2) Filter rows (WHERE)
+-- 2) AS alias example:
+SELECT name AS First_Last_Name from customers
+
+-- 3) Filter rows (WHERE)
 SELECT *
 FROM orders
 WHERE price > 6.00;
 
--- 3) Sort results (ORDER BY)
+-- 4) Sort results (ORDER BY)
 SELECT *
 FROM orders
 ORDER BY price DESC;
 
--- 4) Simple JOIN (most important concept)
+-- 5) Simple JOIN (most important concept)
 SELECT c.name, o.drink, o.price
 FROM customers c
 INNER JOIN orders o
     ON o.customer_id = c.customer_id;
 
--- 5) Simple AGGREGATE w/ JOIN & GROUP BY
+-- 6) Simple AGGREGATE w/ JOIN & GROUP BY
 SELECT c.name, SUM(o.price) AS total_spent
 FROM customers c
 JOIN orders o

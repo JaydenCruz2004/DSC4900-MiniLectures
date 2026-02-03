@@ -49,6 +49,6 @@ ORDER BY total_spent DESC;
 
 -- B) How many total orders are in the database?
 
--- C) How much has Leah spent in total?
+-- C) How much has Leah spent in total? Display AS total_spent
 
 -- Bonus: List everyone who has "A" as the second charecter in their name.

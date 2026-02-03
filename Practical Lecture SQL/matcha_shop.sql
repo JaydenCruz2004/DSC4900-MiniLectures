@@ -2,13 +2,9 @@
 -- Matcha Shop Database
 -- ============================
 
--- Drop tables if they exist (safe to rerun)
 DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS orders;
 
--- ----------------------------
--- Customers Table
--- ----------------------------
 CREATE TABLE customers (
     customer_id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
@@ -17,9 +13,6 @@ CREATE TABLE customers (
     signup_date DATE
 );
 
--- ----------------------------
--- Orders Table
--- ----------------------------
 CREATE TABLE orders (
     order_id INTEGER PRIMARY KEY,
     customer_id INTEGER,

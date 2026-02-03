@@ -2,7 +2,7 @@
 -- SQL BASICS: Resource Page + Mini Lab
 -- ==========================================
 -- Topic: SELECT, WHERE, ORDER BY, JOIN, AGGREGATE
--- Tool: SQLite
+-- Tool: SQLite https://sqliteonline.com/
 -- Purpose: Practical guide + practice activity
 -- ==========================================
 
